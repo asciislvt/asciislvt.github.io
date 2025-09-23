@@ -9,13 +9,13 @@
   background-color: var(--primary-bg-color);
 }
 
-#main-menu {
+body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  column-gap: 5vw;
-  height: 100vh;
-  width: 100vw;
+  height: 97vh;
+  width: 97vw;
 }
 
 #main-menu nav {
@@ -24,21 +24,26 @@
 }
 
 #title {
-  background: linear-gradient(
-    var(--primary-text-color),
-    var(--primary-bg-color) 80%
-  );
+  display: flex;
+  align-items: center;
+  column-gap: 6vw;
+
+  background: linear-gradient(var(--primary-text-color),
+      var(--primary-bg-color) 80%);
   background-clip: text;
   color: transparent;
 }
 
 #title h1 {
   margin: 0px;
+  min-width: 6em;
 }
 
-#subtitle {
-  color: var(--primary-text-color);
-  margin-top: 5px;
+#subtitle h3 {
+  /* background-color: var(--secondary-bg-color); */
+  /* color: var(--secondary-text-color); */
+  /* padding: 15px; */
+  margin: 0px;
 }
 
 a {
@@ -49,10 +54,19 @@ a {
   padding: 10px;
   margin: 4px;
 
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+
   display: flex;
   flex-direction: row-reverse;
 }
 
 a:active {
-  background-color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+a:hover {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
 }

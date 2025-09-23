@@ -1,22 +1,31 @@
+import typewriter from "./modules/typewriter.js"
+
 const nameElements = document.getElementsByClassName("name");
 const motdElement = document.getElementById("motd");
 
 const sillyNames = [
-  "Squandon",
-  "Blandon",
-  "Fandon",
-  "Crandon",
-  "Brandolini",
-  "Brand-dong",
-  "Brand On!",
-  "Stoopid",
+  "squandon",
+  "squand-on",
+  "squand-off",
+  "blandon",
+  "fandon",
+  "crandolini",
+  "brandolini",
+  "brand-dong",
+  "brand-on!",
+  "brand-off",
+  "stoopid",
+  "chill guy",
 ];
 
 const motds = [
-  "Pretty cool, man.",
-  "Go ahead, don't be scared...",
-  "Can you click something?",
-  "I ain't got all day...",
+  "*pees self*",
+  "pretty cool, man.",
+  "i ain't got all day...",
+  "a nice little portfolio.",
+  "watching breaking bad right now.",
+  "go ahead, don't be scared...",
+  "can you click something?",
 ];
 
 randomizeNames();
@@ -32,7 +41,7 @@ function randomizeNames() {
 }
 
 function randomizeMotd() {
-  motdElement.innerHTML = getRandomMotd();
+  typewriter(motdElement, getRandomMotd(), 20);
 }
 
 function getRandomMotd() {
