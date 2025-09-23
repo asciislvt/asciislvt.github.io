@@ -1,24 +1,44 @@
-import "./styles/main_menu.css";
-// import javascriptLogo from './javascript.svg'
-// import viteLogo from '/vite.svg'
-// import { setupCounter } from './counter.js'
-//
-// document.querySelector('#app').innerHTML = `
-//   <div>
-//     <a href="https://vite.dev" target="_blank">
-//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-//     </a>
-//     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-//       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-//     </a>
-//     <h1>Hello Vite!</h1>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//     <p class="read-the-docs">
-//       Click on the Vite logo to learn more
-//     </p>
-//   </div>
-// `
-//
-// setupCounter(document.querySelector('#counter'))
+const nameElements = document.getElementsByClassName("name");
+const motdElement = document.getElementById("motd");
+
+const sillyNames = [
+  "Squandon",
+  "Blandon",
+  "Fandon",
+  "Crandon",
+  "Brandolini",
+  "Brand-dong",
+  "Brand On!",
+  "Stoopid",
+];
+
+const motds = [
+  "Pretty cool, man.",
+  "Go ahead, don't be scared...",
+  "Can you click something?",
+  "I ain't got all day...",
+];
+
+randomizeNames();
+randomizeMotd();
+
+function randomizeNames() {
+  for (let i = 0; i < nameElements.length; i++) {
+    if (i == 0) {
+      continue;
+    }
+    nameElements[i].innerHTML = getRandomName();
+  }
+}
+
+function randomizeMotd() {
+  motdElement.innerHTML = getRandomMotd();
+}
+
+function getRandomMotd() {
+  return motds[Math.floor(Math.random() * motds.length)];
+}
+
+function getRandomName() {
+  return sillyNames[Math.floor(Math.random() * sillyNames.length)];
+}
