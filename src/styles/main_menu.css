@@ -1,0 +1,57 @@
+:root {
+  --primary-bg-color: #eae5cc;
+  --secondary-bg-color: #1f1c0d;
+
+  --primary-text-color: #221d1b;
+  --secondary-text-color: #eae5cc;
+
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+#frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5vw;
+  height: 100vh;
+}
+
+#frame nav {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#title {
+  background: linear-gradient(
+    var(--primary-text-color),
+    var(--primary-bg-color) 80%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+#title h1 {
+  margin: 0px;
+}
+
+#subtitle {
+  color: var(--primary-text-color);
+  margin-top: 5px;
+}
+
+a {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  min-width: 6em;
+  padding: 10px;
+  margin: 4px;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+a:active {
+  background-color: var(--primary-text-color);
+}
