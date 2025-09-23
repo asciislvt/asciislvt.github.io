@@ -20,12 +20,14 @@ const sillyNames = [
 
 const motds = [
   "*pees self*",
+  "which came first, ranch or cool ranch?",
   "pretty cool, man.",
   "i ain't got all day...",
   "a nice little portfolio.",
   "watching breaking bad right now.",
   "go ahead, don't be scared...",
-  "can you click something?",
+  "hey dude, can you click something already?",
+  "(cc) 2025 asciisvt"
 ];
 
 randomizeNames();
@@ -33,9 +35,6 @@ randomizeMotd();
 
 function randomizeNames() {
   for (let i = 0; i < nameElements.length; i++) {
-    if (i == 0) {
-      continue;
-    }
     nameElements[i].innerHTML = getRandomName();
   }
 }

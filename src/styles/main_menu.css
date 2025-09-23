@@ -7,6 +7,7 @@
 
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+  font-family: 'Epunda Slab', serif;
 }
 
 body {
@@ -18,18 +19,15 @@ body {
   width: 97vw;
 }
 
-#main-menu nav {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
 #title {
   display: flex;
   align-items: center;
   column-gap: 6vw;
+}
 
+#title header {
   background: linear-gradient(var(--primary-text-color),
-      var(--primary-bg-color) 80%);
+      var(--primary-bg-color) 91%);
   background-clip: text;
   color: transparent;
 }
@@ -39,34 +37,53 @@ body {
   min-width: 6em;
 }
 
-#subtitle h3 {
+#about {
+  display: none;
+  text-align: center;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  padding: 2em;
+}
+
+#about p {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+#main-menu nav {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+footer h3 {
   /* background-color: var(--secondary-bg-color); */
   /* color: var(--secondary-text-color); */
-  /* padding: 15px; */
-  margin: 0px;
+  padding-top: 15px;
+  margin-top: 5px;
+  font-style: italic;
 }
 
 a {
   background-color: var(--secondary-bg-color);
   color: var(--secondary-text-color);
   text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+
   min-width: 6em;
   padding: 10px;
   margin: 4px;
 
-  transition-property: background-color, color;
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-property: background-color, color, transform;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
 
   display: flex;
   flex-direction: row-reverse;
 }
 
-a:active {
-  background-color: var(--primary-bg-color);
-}
-
 a:hover {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+  transform: scale(1.4);
 }
