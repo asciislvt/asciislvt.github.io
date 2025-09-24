@@ -1,4 +1,4 @@
-import typewriter from "./modules/typewriter.js"
+import typewriter from "./modules/typewriter.js";
 
 const nameElements = document.getElementsByClassName("name");
 const motdElement = document.getElementById("motd");
@@ -27,7 +27,7 @@ const motds = [
   "watching breaking bad right now.",
   "go ahead, don't be scared...",
   "hey dude, can you click something already?",
-  "(cc) 2025 asciisvt"
+  "(c) 2025 asciisvt - no rights reserved",
 ];
 
 randomizeNames();
@@ -35,6 +35,7 @@ randomizeMotd();
 
 function randomizeNames() {
   for (let i = 0; i < nameElements.length; i++) {
+    let randomName = getRandomName();
     nameElements[i].innerHTML = getRandomName();
   }
 }

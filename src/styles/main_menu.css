@@ -1,13 +1,17 @@
 :root {
-  --primary-bg-color: #eae5cc;
-  --secondary-bg-color: #1f1c0d;
+  --primary-bg-color: #f2e9e4;
+  --secondary-bg-color: #212131;
 
-  --primary-text-color: #221d1b;
-  --secondary-text-color: #eae5cc;
+  --primary-text-color: #212131;
+  --secondary-text-color: #f2e9e9;
+  --tertiary-text-color: #4a4e69;
+
+  --primary-accent-color: #c9ada7;
+  --secondary-accent-color: #9a8c98;
 
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
-  font-family: 'Epunda Slab', serif;
+  font-family: "Epunda Slab", serif;
 }
 
 body {
@@ -26,8 +30,10 @@ body {
 }
 
 #title header {
-  background: linear-gradient(var(--primary-text-color),
-      var(--primary-bg-color) 91%);
+  background: linear-gradient(
+    var(--primary-text-color),
+    var(--primary-bg-color) 92%
+  );
   background-clip: text;
   color: transparent;
 }
@@ -37,29 +43,16 @@ body {
   min-width: 6em;
 }
 
-#about {
-  display: none;
-  text-align: center;
-  background-color: var(--secondary-bg-color);
-  color: var(--secondary-text-color);
-  padding: 2em;
-}
-
-#about p {
-  font-size: 1.1em;
-  font-weight: 500;
-}
-
 #main-menu nav {
   display: flex;
   flex-direction: column-reverse;
 }
 
-footer h3 {
+footer {
   /* background-color: var(--secondary-bg-color); */
-  /* color: var(--secondary-text-color); */
-  padding-top: 15px;
-  margin-top: 5px;
+  color: var(--tertiary-text-color);
+  padding: 0px;
+  margin: 0px;
   font-style: italic;
 }
 
