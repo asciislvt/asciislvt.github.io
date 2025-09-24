@@ -43,11 +43,6 @@ body {
   min-width: 6em;
 }
 
-#main-menu nav {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
 footer {
   /* background-color: var(--secondary-bg-color); */
   color: var(--tertiary-text-color);
@@ -56,8 +51,24 @@ footer {
   font-style: italic;
 }
 
-a {
-  background-color: var(--secondary-bg-color);
+#main-menu nav {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+nav a {
+  animation: 0.6s cubic-bezier(0.25, 1, 0.5, 1) fill-in-button;
+  animation-fill-mode: none;
+
+  background-image: linear-gradient(
+    to left,
+    var(--secondary-bg-color) 101%,
+    var(--primary-bg-color) 101%
+  );
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+
   color: var(--secondary-text-color);
   text-decoration: none;
   font-size: 1.1em;
@@ -67,7 +78,7 @@ a {
   padding: 10px;
   margin: 4px;
 
-  transition-property: background-color, color, transform;
+  transition-property: color, transform, background-size;
   transition-duration: 0.4s;
   transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
 
@@ -75,8 +86,19 @@ a {
   flex-direction: row-reverse;
 }
 
-a:hover {
-  background-color: var(--primary-bg-color);
+nav a:hover {
+  background-size: 5%;
   color: var(--primary-text-color);
   transform: scale(1.4);
+}
+
+@keyframes fill-in-button {
+  0% {
+    background-position: right;
+    background-size: 0%;
+  }
+  100% {
+    background-position: right;
+    background-size: 100%;
+  }
 }
