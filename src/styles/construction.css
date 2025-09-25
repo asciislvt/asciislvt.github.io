@@ -2,13 +2,16 @@
   color: var(--p-lightest);
   background-color: var(--p-darker);
   font-style: italic;
-  /* text-align: center; */
-  margin: 8%;
-  padding: 5%;
+  text-align: center;
+  margin: 5em;
+  padding: 2em;
+
+  max-width: 25vw;
 
   display: flex;
   flex-direction: row;
-  column-gap: 4%;
+  align-items: center;
+  column-gap: 4em;
 }
 
 #construction-text {
@@ -19,11 +22,20 @@
 
 #construction-text h3 {
   text-decoration: underline;
-  margin: 2%;
+  margin: 0%;
 }
 
 #construction-text p {
-  margin: 2%;
+  margin: 0%;
 }
 
-#construction-icon {}
+#construction-icon {
+  width: 400px;
+  height: auto;
+}
+
+#construction-icon img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

@@ -20,17 +20,13 @@ body {
   justify-content: center;
 }
 
-#frame {}
-
-header {}
-
-nav {}
-
-nav a {}
-
+#frame {
+  /* width: 70%; */
+  min-width: 50vw;
+  /* height: 50vh; */
+}
 
 main {
   color: var(--p-darker);
-  box-shadow: var(--p-darker) 4px 4px;
-  padding: 5%;
+  padding: 2em;
 }
