@@ -31,6 +31,6 @@ nav a {
 
 nav a:hover {
   background-size: 5%;
-  transform: translateY(-0.5em) scale(1.2);
+  transform: translateY(0.5em) scale(1.2);
   color: var(--p-darkest);
 }
