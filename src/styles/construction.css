@@ -1,0 +1,29 @@
+#construction-warning {
+  color: var(--p-lightest);
+  background-color: var(--p-darker);
+  font-style: italic;
+  /* text-align: center; */
+  margin: 8%;
+  padding: 5%;
+
+  display: flex;
+  flex-direction: row;
+  column-gap: 4%;
+}
+
+#construction-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#construction-text h3 {
+  text-decoration: underline;
+  margin: 2%;
+}
+
+#construction-text p {
+  margin: 2%;
+}
+
+#construction-icon {}

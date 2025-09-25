@@ -1,16 +1,13 @@
 :root {
-  --primary-bg-color: #f2e9e4;
-  --secondary-bg-color: #212131;
+  --p-darkest: #131316;
+  --p-darker: #2e2f3b;
+  --p-dark: #4f5164;
+  --p-mid: #9a8c98;
+  --p-light: #c9ada7;
+  --p-lightest: #f2e9e9;
 
-  --primary-text-color: #212131;
-  --secondary-text-color: #f2e9e9;
-  --tertiary-text-color: #4a4e69;
-
-  --primary-accent-color: #c9ada7;
-  --secondary-accent-color: #9a8c98;
-
-  color: var(--primary-text-color);
-  background-color: var(--primary-bg-color);
+  color: var(--p-darkest);
+  background-color: var(--p-lightest);
   font-family: "Epunda Slab", serif;
 }
 
@@ -30,10 +27,8 @@ body {
 }
 
 #title header {
-  background: linear-gradient(
-    var(--primary-text-color),
-    var(--primary-bg-color) 92%
-  );
+  background: linear-gradient(var(--p-darkest),
+      var(--p-lightest) 92%);
   background-clip: text;
   color: transparent;
 }
@@ -44,8 +39,7 @@ body {
 }
 
 footer {
-  /* background-color: var(--secondary-bg-color); */
-  color: var(--tertiary-text-color);
+  color: var(--p-dark);
   padding: 0px;
   margin: 0px;
   font-style: italic;
@@ -57,19 +51,16 @@ footer {
 }
 
 nav a {
-  animation: 0.6s cubic-bezier(0.25, 1, 0.5, 1) fill-in-button;
-  animation-fill-mode: none;
+  animation: 0.6s cubic-bezier(0.25, 1, 0.5, 1) reveal-button;
 
-  background-image: linear-gradient(
-    to left,
-    var(--secondary-bg-color) 101%,
-    var(--primary-bg-color) 101%
-  );
+  background-image: linear-gradient(to left,
+      var(--p-darkest) 101%,
+      var(--p-lightest) 101%);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 100%;
 
-  color: var(--secondary-text-color);
+  color: var(--p-lightest);
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 500;
@@ -88,17 +79,16 @@ nav a {
 
 nav a:hover {
   background-size: 5%;
-  color: var(--primary-text-color);
   transform: scale(1.4);
+  color: var(--p-darkest);
 }
 
-@keyframes fill-in-button {
+@keyframes reveal-button {
   0% {
-    background-position: right;
     background-size: 0%;
   }
+
   100% {
-    background-position: right;
     background-size: 100%;
   }
 }

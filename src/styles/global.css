@@ -1,0 +1,36 @@
+:root {
+  --p-darkest: #131316;
+  --p-darker: #2e2f3b;
+  --p-dark: #4f5164;
+  --p-mid: #9a8c98;
+  --p-light: #c9ada7;
+  --p-lightest: #f2e9e9;
+
+  color: var(--p-darkest);
+  background-color: var(--p-lightest);
+  font-family: "Epunda Slab", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+#frame {}
+
+header {}
+
+nav {}
+
+nav a {}
+
+
+main {
+  color: var(--p-darker);
+  box-shadow: var(--p-darker) 4px 4px;
+  padding: 5%;
+}
