@@ -9,6 +9,7 @@
   color: var(--p-darkest);
   background-color: var(--p-lightest);
   font-family: "Epunda Slab", serif;
+  font-size: 1.2em;
 }
 
 body {
@@ -34,14 +35,14 @@ body {
 }
 
 #title h1 {
-  margin: 0px;
+  margin: 0%;
   min-width: 6em;
 }
 
 footer {
   color: var(--p-dark);
-  padding: 0px;
-  margin: 0px;
+  padding: 0%;
+  margin: 0%;
   font-style: italic;
 }
 
@@ -66,8 +67,8 @@ nav a {
   font-weight: 500;
 
   min-width: 6em;
-  padding: 10px;
-  margin: 4px;
+  padding: 9%;
+  margin: 4%;
 
   transition-property: color, transform, background-size;
   transition-duration: 0.4s;
