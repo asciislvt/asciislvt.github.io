@@ -1,27 +1,26 @@
 nav {
   display: flex;
   flex-direction: row-reverse;
-  column-gap: 4%;
+  column-gap: 1em;
 }
 
 nav a {
-  background-image: linear-gradient(to top,
-      var(--p-darkest) 101%,
+  animation: 0.6s cubic-bezier(0.25, 1, 0.5, 1) reveal-button;
+  background-image: linear-gradient(var(--p-darkest) 101%,
       var(--p-lightest) 101%);
+  background-color: var(--p-lightest);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 100%;
+  background-position: 0em 0em;
 
   color: var(--p-lightest);
-  text-decoration: none;
+  font-size: 1.1em;
   font-weight: 500;
-  font-style: normal;
 
   padding: 0.6em;
   min-width: 5em;
 
-  transition-property: color, transform, background-size;
-  transition-duration: 0.4s;
+  transition-property: color, transform, background-position;
+  transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
 
   display: flex;
@@ -29,7 +28,17 @@ nav a {
 }
 
 nav a:hover {
-  background-size: 5%;
-  transform: translateY(0.5em) scale(1.2);
+  background-position: 0em 2.2em;
+  transform: translateY(0.4em);
   color: var(--p-darkest);
+}
+
+@keyframes reveal-button {
+  from {
+    background-position: 0em 8em;
+  }
+
+  to {
+    background-position: 0em 0em;
+  }
 }

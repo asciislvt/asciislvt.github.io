@@ -15,25 +15,23 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 20em;
   align-items: center;
   justify-content: center;
 }
 
+#frame {
+  min-width: 40vw;
+  max-width: 70vw;
+  padding: 1.4em;
+  box-shadow: -0.2em 0.2em 0em var(--p-darker);
+}
+
 a {
   color: var(--p-dark);
+  background-color: var(--p-light);
   text-decoration: none;
   font-style: italic;
   font-weight: 700;
-}
 
-#frame {
-  min-width: 50vw;
-  /* width: 70%; */
-  /* height: 50vh; */
-}
-
-main {
-  color: var(--p-darker);
-  padding: 2em;
+  padding: 0.01em 0.4em;
 }
