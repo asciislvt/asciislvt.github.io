@@ -20,6 +20,13 @@ body {
   justify-content: center;
 }
 
+a {
+  color: var(--p-dark);
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+}
+
 #frame {
   min-width: 50vw;
   /* width: 70%; */

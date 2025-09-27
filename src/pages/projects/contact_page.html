@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="../../styles/global.css" rel="stylesheet" />
+  <link href="../../styles/navigation.css" rel="stylesheet" />
+  <title>Contact us!</title>
+</head>
+
+<body>
+  <nav>
+    <a href="../../../index.html">home</a>
+    <a href="../blog.html">blog</a>
+    <a href="../about.html">about</a>
+    <a href="../projects.html">projects</a>
+  </nav>
+  <h1>Get in touch with us!</h1>
+  <fieldset>
+    <legend>Contact Form</legend>
+    <form action="#" method="GET">
+      <label for="name">Full Name: </label>
+      <input type="text" name="name" placeholder="John Pork" />
+
+      <label for="email">Email: </label>
+      <input type="email" name="email" placeholder="example@mail.com" />
+
+      <br />
+      <label for="subject">Subject: </label>
+      <input type="text" name="subject" placeholder="Really Important!" />
+      <br />
+      <label for="message">Message:</label>
+      <br />
+      <textarea rows="10" cols="50" name="message" placeholder="Howdy!"></textarea>
+
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </fieldset>
+  <br />
+  <br />
+
+  <h3>While you're here, take our survey!</h3>
+  <fieldset>
+    <legend>Survey</legend>
+    <form>
+      <label for="found-us">How did you find us?</label>
+      <select id="found-us">
+        <option value="google">Google</option>
+        <option value="social-media">Social Media</option>
+        <option value="word-of-mouth">Word of Mouth</option>
+      </select>
+      <br />
+      <label>Rate your overall user experience.</label>
+      <input type="radio" name="ux-rating" id="1" value="1" />
+      <label for="1">1</label>
+      <input type="radio" name="ux-rating" id="2" value="2" />
+      <label for="2">2</label>
+      <input type="radio" name="ux-rating" id="3" value="3" />
+      <label for="3">3</label>
+      <input type="radio" name="ux-rating" id="4" value="4" />
+      <label for="4">4</label>
+      <input type="radio" name="ux-rating" id="5" value="5" />
+      <label for="5">5</label>
+      <br />
+      <label for="comments">Any additional comments?</label>
+      <br />
+      <textarea rows="10" cols="50" name="comments" placeholder="Comments here"></textarea>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </fieldset>
+</body>
+
+</html>
