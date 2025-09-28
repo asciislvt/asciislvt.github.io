@@ -29,7 +29,7 @@ nav a {
 
 nav a:hover {
   background-position: 0em 2.2em;
-  transform: translateY(0.4em);
+  transform: translateY(0.5em);
   color: var(--p-darkest);
 }
 

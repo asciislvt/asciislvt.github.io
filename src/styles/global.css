@@ -19,10 +19,14 @@ body {
   justify-content: center;
 }
 
+main {
+  padding: 2em;
+}
+
 #frame {
   min-width: 40vw;
   max-width: 70vw;
-  padding: 1.4em;
+  padding: 1em;
   box-shadow: -0.2em 0.2em 0em var(--p-darker);
 }
 
